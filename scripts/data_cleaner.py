@@ -2,7 +2,7 @@ import re
 
 class DataCleaner:
     """
-    ANKA-LLM Veri Temizleme ve Normalizasyon Modülü
+    Anka Silicon Dynamics Veri Temizleme ve Normalizasyon Modülü
     
     TR-Corpus için metinleri ham veriden 'Altın Veri'ye dönüştürür.
     """

@@ -1,6 +1,6 @@
 # 📊 TR-Corpus v1: Milli Veri Madenciliği Mimarisi
 
-ANKA-LLM'in zekası, beslendiği verinin kalitesiyle sınırlıdır. Bu doküman, Türkiye'nin "Altın Veri Seti"ni oluşturma stratejisini detaylandırır.
+Anka Silicon Dynamics'in zekası, beslendiği verinin kalitesiyle sınırlıdır. Bu doküman, Türkiye'nin "Altın Veri Seti"ni oluşturma stratejisini detaylandırır.
 
 ## 1. Veri Kaynakları: Katmanlı Mimari
 
@@ -15,7 +15,7 @@ ANKA-LLM'in zekası, beslendiği verinin kalitesiyle sınırlıdır. Bu doküman
 
 ## 2. Sentetik Veri Rafinerisi (Synthetic Refiner)
 
-Gerçek verinin yetmediği veya gizlilik içerdiği durumlarda, ANKA-LLM kendi verisini üretir:
+Gerçek verinin yetmediği veya gizlilik içerdiği durumlarda, Anka Silicon Dynamics kendi verisini üretir:
 
 1.  **Logical Injection:** Matematik ve mantık problemlerinin Türkçe kurgulanması.
 2.  **OCR Pipeline:** El yazması eserlerin ve eski gazete arşivlerinin "LLM-Ready" metne dönüştürülmesi.
@@ -31,4 +31,4 @@ Gerçek verinin yetmediği veya gizlilik içerdiği durumlarda, ANKA-LLM kendi v
 ---
 
 ## 🚀 Hedef: 500 Milyar Yüksek Kaliteli Türkçe Token
-Bu veri seti, sadece ANKA-LLM için değil, Türkiye'nin gelecekteki tüm yapay zeka projeleri için bir "Milli Dijital Hafıza" olacaktır.
+Bu veri seti, sadece Anka Silicon Dynamics için değil, Türkiye'nin gelecekteki tüm yapay zeka projeleri için bir "Milli Dijital Hafıza" olacaktır.

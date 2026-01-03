@@ -1,6 +1,6 @@
-# 📊 ANKA-LLM: Değerlendirme Metrikleri ve Başarım Ölçütleri
+# 📊 Anka Silicon Dynamics: Değerlendirme Metrikleri ve Başarım Ölçütleri
 
-Bir modelin "Milli" ve "Üstün" olması sadece matematiksel bir iddia değil, ölçülebilir bir gerçeklik olmalıdır. ANKA-LLM, başarısını şu metriklerle kanıtlar:
+Bir modelin "Milli" ve "Üstün" olması sadece matematiksel bir iddia değil, ölçülebilir bir gerçeklik olmalıdır. Anka Silicon Dynamics, başarısını şu metriklerle kanıtlar:
 
 ## 1. Standart LLM Benchmark'ları (Türkçe Adaptasyonu)
 
@@ -26,4 +26,4 @@ Bir modelin "Milli" ve "Üstün" olması sadece matematiksel bir iddia değil, �
 ---
 
 ## 🚀 Hedef: "Kağıt Üstünde Değil, Sahada Üstünlük"
-Biz sadece skor peşinde değiliz; ANKA-LLM'in bir Türk mühendisine, hukukçusuna veya askerine sağladığı gerçek zamanlı değerle ölçülüyoruz.
+Biz sadece skor peşinde değiliz; Anka Silicon Dynamics'in bir Türk mühendisine, hukukçusuna veya askerine sağladığı gerçek zamanlı değerle ölçülüyoruz.

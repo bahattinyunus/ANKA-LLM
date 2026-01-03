@@ -1,6 +1,6 @@
 # 🦅 ASİMETRİK SAVUNMA VE STRATEJİK ZEKA (ASZ)
 
-ANKA-LLM, milli savunma sanayiimizin karar destek mekanizmalarını ve elektronik harp yeteneklerini yapay zeka ile çarpan bir "Stratejik Akıl" katmanıdır.
+Anka Silicon Dynamics, milli savunma sanayiimizin karar destek mekanizmalarını ve elektronik harp yeteneklerini yapay zeka ile çarpan bir "Stratejik Akıl" katmanıdır.
 
 ## 1. Otomatik Karar Destek Sistemleri (C2-AI)
 - **Hızlı Durum Analizi:** Sahadan gelen binlerce sensör verisini saniyeler içinde analiz ederek en uygun harekat tarzını önerme.

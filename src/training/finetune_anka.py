@@ -1,7 +1,7 @@
 """
-ANKA-LLM Unsloth Fine-Tuning Script (Advanced Skeleton)
+Anka Silicon Dynamics Unsloth Fine-Tuning Script (Advanced Skeleton)
 
-Bu script, Unsloth kütüphanesini kullanarak ANKA-LLM'in
+Bu script, Unsloth kütüphanesini kullanarak Anka Silicon Dynamics'in
 Supervised Fine-Tuning (SFT) sürecini asimetrik hızda gerçekleştirir.
 """
 
@@ -17,7 +17,7 @@ except ImportError:
     FastLanguageModel = None
 
 def run_anka_finetune(model_id="unsloth/llama-3-8b-bnb-4bit"):
-    print(f"ANKA-LLM Fine-Tuning Başlatılıyor: {model_id}")
+    print(f"Anka Silicon Dynamics Fine-Tuning Başlatılıyor: {model_id}")
     
     if FastLanguageModel is None:
         print("Uyarı: Unsloth yüklü değil, standart Transformers kütüphanesi kullanılacak.")

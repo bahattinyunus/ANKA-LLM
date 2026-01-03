@@ -1,6 +1,6 @@
-# 🧪 ANKA-LLM: Eğitim Simülasyonu ve İş Akışı
+# 🧪 Anka Silicon Dynamics: Eğitim Simülasyonu ve İş Akışı
 
-Bu script, ANKA-LLM'in "Knowledge Distillation" (Bilgi Damıtma) sürecini simüle eder. Gerçek donanım olmasa bile, algoritma mantığının nasıl çalıştığını görselleştirir.
+Bu script, Anka Silicon Dynamics'in "Knowledge Distillation" (Bilgi Damıtma) sürecini simüle eder. Gerçek donanım olmasa bile, algoritma mantığının nasıl çalıştığını görselleştirir.
 
 ```python
 import time
@@ -11,7 +11,7 @@ from rich.panel import Panel
 console = Console()
 
 def simulate_distillation():
-    console.print(Panel.align("[bold cyan]ANKA-LLM Eğitim Simülasyonu Başlatılıyor...[/bold cyan]", align="center"))
+    console.print(Panel.align("[bold cyan]Anka Silicon Dynamics Eğitim Simülasyonu Başlatılıyor...[/bold cyan]", align="center"))
     
     with Progress(
         SpinnerColumn(),

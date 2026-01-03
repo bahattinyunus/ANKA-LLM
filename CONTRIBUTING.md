@@ -1,6 +1,6 @@
-# Katılım Rehberi (Contributing Guide)
+# Anka Silicon Dynamics'e Katkıda Bulunma Rehberi (Contributing Guide)
 
-ANKA-LLM projesine hoş geldiniz! Bu proje, Türkiye'nin yapay zeka alanındaki asimetrik üstünlüğünü ve silikon bağımsızlığını hedefleyen milli bir çabadır. 
+Anka Silicon Dynamics projesine hoş geldiniz! Bu proje, Türkiye'nin yapay zeka alanındaki asimetrik üstünlüğünü ve silikon bağımsızlığını hedefleyen milli bir çabadır. 
 
 ## Nasıl Katkı Sağlayabilirsiniz?
 

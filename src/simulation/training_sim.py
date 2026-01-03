@@ -14,7 +14,7 @@ except ImportError:
 console = Console()
 
 def simulate_distillation():
-    console.print(Panel.align("[bold cyan]ANKA-LLM Eğitim Simülasyonu Başlatılıyor...[/bold cyan]", align="center") if hasattr(Panel, 'align') else "ANKA-LLM Eğitim Simülasyonu Başlatılıyor...")
+    console.print(Panel.align("[bold cyan]Anka Silicon Dynamics Eğitim Simülasyonu Başlatılıyor...[/bold cyan]", align="center") if hasattr(Panel, 'align') else "Anka Silicon Dynamics Eğitim Simülasyonu Başlatılıyor...")
     
     # Simple simulation if rich is not available, or full if it is
     try:

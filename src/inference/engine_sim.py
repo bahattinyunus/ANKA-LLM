@@ -3,7 +3,7 @@ import random
 
 class NPUInferenceEngine:
     """
-    ANKA-LLM Milli NPU Çıkarım (Inference) Simülatörü
+    Anka Silicon Dynamics Milli NPU Çıkarım (Inference) Simülatörü
     
     Yerli NPU mimarisinin standart GPU'lara göre asimetrik 
     üstünlüğünü (Perf/Watt ve Gecikme) simüle eder.

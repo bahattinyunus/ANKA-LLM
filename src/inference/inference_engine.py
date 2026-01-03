@@ -2,7 +2,7 @@ from typing import List, Dict, Optional, Any
 
 class ANKAInference:
     """
-    ANKA-LLM Inference Engine (vLLM Wrapper)
+    Anka Silicon Dynamics Inference Engine (vLLM Wrapper)
     
     Yerli donanımlarda koşturulmadan önce, vLLM kütüphanesi kullanılarak
     yapılan yüksek performanslı çıkarım (inference) simülasyonu.
@@ -24,7 +24,7 @@ class ANKAInference:
         print(f"⚡ İşleniyor (vLLM PagedAttention)...")
         
         # Simüle edilmiş çıktı
-        response = f"[ANKA-LLM]: '{prompt}' konusunu analiz ettim. Stratejik olarak şu sonuçlara ulaştım..."
+        response = f"[Anka Silicon Dynamics]: '{prompt}' konusunu analiz ettim. Stratejik olarak şu sonuçlara ulaştım..."
         return response
 
     def stream(self, prompt: str):

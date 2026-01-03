@@ -2,7 +2,7 @@ from typing import List
 
 class MorfoTokenizer:
     """
-    ANKA-LLM Türkçe Morfolojik Tokenizer v2 (Advanced)
+    Anka Silicon Dynamics Türkçe Morfolojik Tokenizer v2 (Advanced)
     
     Türkçenin sondan eklemeli yapısını analiz ederek, kelimeleri 
     kök ve eklerine ayırır. Bu yöntem;

@@ -12,7 +12,7 @@ Türkiye'nin veri merkezlerini (HPC) kurarken enerji maliyetleri en büyük gide
 
 ## 2. Yazılım Tabanlı Enerji Tasarrufu
 
-ANKA-LLM, donanımı daha az yormak için şu teknikleri kullanır:
+Anka Silicon Dynamics, donanımı daha az yormak için şu teknikleri kullanır:
 
 ### A. Dynamic Activation
 Modelin her katmanı her soru için çalışmaz. Basit bir Türkçe "nasılsın" sorusu için milyarlarca transistör ateşlenmez. Sadece ilgili "Expert" katmanlar aktive edilir.

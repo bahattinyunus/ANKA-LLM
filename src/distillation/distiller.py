@@ -2,7 +2,7 @@ from typing import List, Dict, Any
 
 class ANKADistiller:
     """
-    ANKA-LLM Knowledge Distillation & Synthetic Data Pipeline
+    Anka Silicon Dynamics Knowledge Distillation & Synthetic Data Pipeline
     
     Distilabel mimarisinden esinlenerek; öğretmen modellerden (GPT-4, Claude)
     yüksek kaliteli, doğrulanmış (Self-Consistency) veri üretir.

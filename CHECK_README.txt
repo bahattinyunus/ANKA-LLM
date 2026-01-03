@@ -1,4 +1,4 @@
-﻿# 🦅 ANKA-LLM: Silikon Bağımsızlığına Giden Köprü
+﻿# 🦅 Anka Silicon Dynamics: Silikon Temelli Zeka Simülasyonu
 
 **"Donanımı Beklemiyoruz, Donanım Geldiğinde Üzerinde Koşacak Aklı İnşa Ediyoruz."**
 

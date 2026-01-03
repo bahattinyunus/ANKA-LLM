@@ -1,6 +1,6 @@
 # 🛰️ Milli NPU (Yapay Zeka İşlemcisi) Yazılım ve Mimari Gereksinimleri
 
-**Vizyon:** Türkiye’nin ilk yerli yapay zeka hızlandırıcısının, sadece bir donanım olarak değil, ANKA-LLM ekosistemiyle %100 uyumlu bir "akıllı çekirdek" olarak tasarlanması.
+**Vizyon:** Türkiye’nin ilk yerli yapay zeka hızlandırıcısının, sadece bir donanım olarak değil, Anka Silicon Dynamics ekosistemiyle %100 uyumlu bir "akıllı çekirdek" olarak tasarlanması.
 
 ## 1. Mimari Odak: Verimlilik > Genel Amaç
 
@@ -57,4 +57,4 @@ Tek bir çip Gemini'yi eğitemez. Binlerce çip birbiriyle konuşmalıdır.
 
 ## 🚩 Kritik Strateji: "Software-First Hardware"
 
-Bizim donanım mühendislerimiz, çipi tasarlamaya başlamadan önce bu repodaki **ANKA-LLM Python kodlarını** simülatörlerde çalıştırmalıdır. Çip, yazılıma uymalı; yazılım çipe uydurulmaya çalışılmamalıdır.
+Bizim donanım mühendislerimiz, çipi tasarlamaya başlamadan önce bu repodaki **Anka Silicon Dynamics Python kodlarını** simülatörlerde çalıştırmalıdır. Çip, yazılıma uymalı; yazılım çipe uydurulmaya çalışılmamalıdır.

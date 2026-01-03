@@ -2,7 +2,7 @@ from typing import Dict, Any
 
 class ANKATrainer:
     """
-    ANKA-LLM Training Engine (Unsloth Wrapper)
+    Anka Silicon Dynamics Training Engine (Unsloth Wrapper)
     
     %200 daha hızlı eğitim ve %70 daha az VRAM kullanımı sağlayan 
     Unsloth kütüphanesi için yapılandırılmış eğitim motoru.

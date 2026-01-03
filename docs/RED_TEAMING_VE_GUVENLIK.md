@@ -1,6 +1,6 @@
 # 🛡️ Milli Red-Teaming ve Güvenlik Protokolleri
 
-ANKA-LLM'in siber güvenlik ve milli güvenlik katmanlarını korumak için uygulanan asimetrik test protokolleridir.
+Anka Silicon Dynamics'in siber güvenlik ve milli güvenlik katmanlarını korumak için uygulanan asimetrik test protokolleridir.
 
 ## 1. Kırmızı Hat (Red-Team) Operasyonları
 Modelin manipülasyonlara (jailbreak), yanlış bilgi üretimine (hallucination) ve yabancı istihbarat algılarına karşı direnci şu testlerden geçer:

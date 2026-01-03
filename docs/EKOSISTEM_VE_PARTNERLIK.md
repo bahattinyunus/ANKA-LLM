@@ -1,6 +1,6 @@
 # 🤝 ANKA Ekosistemi ve Partnerlik Modeli
 
-ANKA-LLM, Türkiye'nin tüm zekasını birleştiren bir platformdur. Üniversite, Sanayi ve Devlet (Triple Helix) bu ekosistemin parçasıdır.
+Anka Silicon Dynamics, Türkiye'nin tüm zekasını birleştiren bir platformdur. Üniversite, Sanayi ve Devlet (Triple Helix) bu ekosistemin parçasıdır.
 
 ## 1. Akademik İş Birliği
 - **Doktora Bursları:** LLM optimizasyonu, quantization ve morfoloji çalışan araştırmacılara hibe desteği.
@@ -15,4 +15,4 @@ ANKA-LLM, Türkiye'nin tüm zekasını birleştiren bir platformdur. Üniversite
 - **Yapay Zeka Özel İhtisas Bölgeleri:** Vergi muafiyeti ve donanım ithalat kolaylıkları.
 
 ---
-ANKA-LLM bir şirketin değil, bir milletin projesidir.
+Anka Silicon Dynamics bir şirketin değil, bir milletin projesidir.

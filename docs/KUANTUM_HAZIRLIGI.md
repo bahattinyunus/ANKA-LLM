@@ -1,9 +1,9 @@
-# ⚛️ ANKA-LLM: Kuantum Hazırlığı ve Gelecek Güvencesi (Quantum-Ready)
+# ⚛️ Anka Silicon Dynamics: Kuantum Hazırlığı ve Gelecek Güvencesi (Quantum-Ready)
 
 Milli yapay zeka stratejimiz sadece bugünün değil, kuantum bilgisayarların dünyayı değiştireceği "Kuantum Üstünlüğü" çağının da hazırlığını kapsar.
 
 ## 1. Post-Kuantum Kriptografi (PQC) Entegrasyonu
-ANKA-LLM'in tüm veri akışları ve model ağırlıkları, kuantum bilgisayarların kıramayacağı siber güvenlik algoritmalarıyla korunur:
+Anka Silicon Dynamics'in tüm veri akışları ve model ağırlıkları, kuantum bilgisayarların kıramayacağı siber güvenlik algoritmalarıyla korunur:
 - **Lattice-based Cryptography:** Veri madenciliği ve model transferi süreçlerinde kuantum dirençli şifreleme katmanı.
 - **Milli PQC Standartları:** TÜBİTAK ve yerli siber güvenlik birimlerinin protokolleriyle tam uyum.
 

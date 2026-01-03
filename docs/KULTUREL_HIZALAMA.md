@@ -1,6 +1,6 @@
 # 🛡️ Kültürel Hizalama (Cultural Alignment) ve Etik Bağışıklık
 
-ANKA-LLM'in sadece teknik olarak değil, değerler boyutuyla da yerli ve milli olması projenin en kritik güvenlik katmanıdır.
+Anka Silicon Dynamics'in sadece teknik olarak değil, değerler boyutuyla da yerli ve milli olması projenin en kritik güvenlik katmanıdır.
 
 ## 1. Neden Kültürel Hizalama?
 
@@ -30,7 +30,7 @@ Türk sosyologlar, tarihçiler ve hukukçulardan oluşan bir ekip, modeli zorlay
 
 ## 3. Tarihsel Doğruluk ve Terminoloji
 
-ANKA-LLM, Türkiye'nin tarihsel mirasını (Osmanlı, Selçuklu, Cumhuriyet) anlatırken yabancı literatürün yanlı çevirilerini değil, kendi özgün arşivlerimizin terminolojisini kullanacak şekilde optimize edilir.
+Anka Silicon Dynamics, Türkiye'nin tarihsel mirasını (Osmanlı, Selçuklu, Cumhuriyet) anlatırken yabancı literatürün yanlı çevirilerini değil, kendi özgün arşivlerimizin terminolojisini kullanacak şekilde optimize edilir.
 
 ---
 
