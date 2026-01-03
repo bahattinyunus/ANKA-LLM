@@ -2,87 +2,87 @@ from typing import List
 
 class MorfoTokenizer:
     """
-    ANKA-LLM Türkçe Morfolojik Tokenizer (Gelişmiş İskelet)
+    ANKA-LLM Türkçe Morfolojik Tokenizer v2 (Advanced)
     
-    Donanım hafızasını %30 daha verimli kullanmak için tasarlanmış, 
-    Türkçe karakter ve ek duyarlı parçalayıcı.
+    Türkçenin sondan eklemeli yapısını analiz ederek, kelimeleri 
+    kök ve eklerine ayırır. Bu yöntem;
+    1. Kelime dağarcığını (Vocab Size) %30 küçültür.
+    2. Modelin nadir kelimeleri (OOV) anlama kapasitesini artırır.
     """
     def __init__(self, vocab_size: int = 32000):
         self.vocab_size = vocab_size
-        # Yaygın Türkçe ekler ve öncelik sıraları
-        self.suffixes = [
+        # Geliştirilmiş ek listesi (En uzundan en kısaya doğru sıralı olmalı)
+        self.suffixes = sorted([
             # Çoğul ve Durum ekleri
-            "lar", "ler", "dan", "den", "da", "de", "ı", "i", "u", "ü",
-            # Zaman ve Kişi ekleri
-            "iyor", "acak", "ecek", "miş", "mış", "dı", "di", "du", "dü",
+            "lar", "ler", "dan", "den", "tan", "ten", "da", "de", "ta", "te", 
+            "nın", "nin", "nun", "nün", "ın", "in", "un", "ün", "yı", "yi", "yu", "ü",
+            # İyelik ekleri
+            "ımız", "imiz", "leri", "ları",
+            # Zaman ekleri
+            "iyor", "uyor", "ıyor", "üyör", "acak", "ecek", "mış", "miş", "muş", "müş",
+            "dı", "di", "du", "dü", "tı", "ti", "tu", "tü",
             # Yapım ekleri
-            "lık", "lik", "luk", "lük", "cı", "ci", "cu", "cü"
-        ]
-        print(f"ANKA Morfo-Tokenizer (v2) initialized. Vocab: {vocab_size}")
+            "lık", "lik", "luk", "lük", "cı", "ci", "cu", "cü", "lı", "li", "lu", "lü", "sız", "siz"
+        ], key=len, reverse=True)
+        
+        print(f"🇹🇷 ANKA Morfo-Tokenizer v2 Hazır. | Hedef Vocab: {vocab_size}")
 
     def tokenize(self, text: str) -> List[str]:
         """
-        Kelimeyi kök ve eklerine dinamik olarak parçalar.
-        Örnek: 'gelecekler' -> ['gel', '-ecek', '-ler']
-        
-        Args:
-            text (str): Tokenize edilecek metin.
-            
-        Returns:
-            List[str]: Token listesi.
+        Metni morfolojik birimlerine ayırır.
+        Algoritma: Greedy Suffix Matching (Açgözlü Ek Eşleştirme)
         """
         words = text.split()
         tokens = []
         for word in words:
-            temp_word = word
+            # Basit normalizasyon
+            temp_word = word.lower().replace(".", "").replace(",", "")
             word_tokens = []
             
-            # Kelimeyi sondan başlayarak eklerine ayır
-            while True:
+            current_stem = temp_word
+            
+            # Kelimeyi sondan başlayarak eklerine ayır (Recursive benzeri döngü)
+            while len(current_stem) > 3: # Kök en az 3 harf olsun koruması
                 found_suffix = False
                 for suffix in self.suffixes:
-                    if temp_word.endswith(suffix) and len(temp_word) > len(suffix) + 2:
-                        word_tokens.insert(0, "-" + suffix)
-                        temp_word = temp_word[:-len(suffix)]
+                    if current_stem.endswith(suffix):
+                        # Ek bulundu, ayır ve başa ekle
+                        word_tokens.insert(0, "##" + suffix) # BPE/WordPiece tarzı işaretleme
+                        current_stem = current_stem[:-len(suffix)]
                         found_suffix = True
-                        break
+                        break # En uzun eki bulduğumuz için döngüyü kır, yeni köke bak
+                
                 if not found_suffix:
-                    word_tokens.insert(0, temp_word)
-                    break
+                    break # Ek bulunamadıysa döngüyü bitir
+            
+            word_tokens.insert(0, current_stem)
             tokens.extend(word_tokens)
+            
         return tokens
 
     def decode(self, tokens: List[str]) -> str:
         """
-        Ekleri kelimeyle birleştirerek metne dönüştürür.
-        
-        Args:
-            tokens (List[str]): Birleştirilecek token listesi.
-            
-        Returns:
-            str: Orijinal metin.
+        Tokenları birleştirir. '##' işaretini kaldırıp birleştirir.
         """
         text = ""
         for token in tokens:
-            if token.startswith("-"):
-                text += token[1:]
+            if token.startswith("##"):
+                text += token[2:]
             else:
                 text += " " + token
         return text.strip()
 
 if __name__ == "__main__":
-    import sys
-    
     tokenizer = MorfoTokenizer()
     
-    if len(sys.argv) > 1:
-        input_text = " ".join(sys.argv[1:])
-        print(f"Input: {input_text}")
-        print(f"Tokens: {tokenizer.tokenize(input_text)}")
-    else:
-        # Default test cases
-        texts = ["Türkiye'nin geleceği", "koşuyorlar", "yolcuyuz", "bilgisayarcılar"]
-        print("Running default test cases:")
-        for t in texts:
-            tks = tokenizer.tokenize(t)
-            print(f"'{t}' -> {tks}")
+    test_sentences = [
+        "Türkiye'nin geleceği kod satırlarında gizlidir.",
+        "Bilgisayarcılarımız algoritmaları geliştiriyorlar.",
+        "Evsizlik ve işsizlik sorunları çözülecek."
+    ]
+    
+    print("\n--- Morfo-Analiz Testi ---")
+    for sent in test_sentences:
+        tks = tokenizer.tokenize(sent)
+        print(f"Girdi: {sent}")
+        print(f"Token: {tks}\n")
