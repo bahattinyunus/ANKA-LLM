@@ -1,3 +1,5 @@
+from typing import List
+
 class MorfoTokenizer:
     """
     ANKA-LLM Türkçe Morfolojik Tokenizer (Gelişmiş İskelet)
@@ -5,7 +7,7 @@ class MorfoTokenizer:
     Donanım hafızasını %30 daha verimli kullanmak için tasarlanmış, 
     Türkçe karakter ve ek duyarlı parçalayıcı.
     """
-    def __init__(self, vocab_size=32000):
+    def __init__(self, vocab_size: int = 32000):
         self.vocab_size = vocab_size
         # Yaygın Türkçe ekler ve öncelik sıraları
         self.suffixes = [
@@ -18,10 +20,16 @@ class MorfoTokenizer:
         ]
         print(f"ANKA Morfo-Tokenizer (v2) initialized. Vocab: {vocab_size}")
 
-    def tokenize(self, text):
+    def tokenize(self, text: str) -> List[str]:
         """
         Kelimeyi kök ve eklerine dinamik olarak parçalar.
         Örnek: 'gelecekler' -> ['gel', '-ecek', '-ler']
+        
+        Args:
+            text (str): Tokenize edilecek metin.
+            
+        Returns:
+            List[str]: Token listesi.
         """
         words = text.split()
         tokens = []
@@ -44,9 +52,15 @@ class MorfoTokenizer:
             tokens.extend(word_tokens)
         return tokens
 
-    def decode(self, tokens):
+    def decode(self, tokens: List[str]) -> str:
         """
         Ekleri kelimeyle birleştirerek metne dönüştürür.
+        
+        Args:
+            tokens (List[str]): Birleştirilecek token listesi.
+            
+        Returns:
+            str: Orijinal metin.
         """
         text = ""
         for token in tokens:
@@ -57,8 +71,18 @@ class MorfoTokenizer:
         return text.strip()
 
 if __name__ == "__main__":
+    import sys
+    
     tokenizer = MorfoTokenizer()
-    texts = ["Türkiye'nin geleceği", "koşuyorlar", "yolcuyuz"]
-    for t in texts:
-        tks = tokenizer.tokenize(t)
-        print(f"'{t}' -> {tks}")
+    
+    if len(sys.argv) > 1:
+        input_text = " ".join(sys.argv[1:])
+        print(f"Input: {input_text}")
+        print(f"Tokens: {tokenizer.tokenize(input_text)}")
+    else:
+        # Default test cases
+        texts = ["Türkiye'nin geleceği", "koşuyorlar", "yolcuyuz", "bilgisayarcılar"]
+        print("Running default test cases:")
+        for t in texts:
+            tks = tokenizer.tokenize(t)
+            print(f"'{t}' -> {tks}")
